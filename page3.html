@@ -1,33 +1,42 @@
+
 <!doctype html>
 <html lang="en">
   <head>
+    {% block head %}
+      <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      {{ bootstrap.load_css() }}
 
+      {% block styles %}
+        <!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+      {% endblock %}
       <title>7327 Project CST 205 Project</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      {% endblock %}
   </head>
-<body>
+  
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">The Aviator Navigator</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('page2func') }}">How It Works</a></li>
+            <li><a href="{{ url_for('page3func') }}">Experience</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
     <div class="container">
-      <br><br>
-      <!-- Picture name by picture author -->
-      <h1>{{im2}} by {{im2_user}}</h1>
-      <br>
-      <p>
-        <!-- Picture -->
-        <img src="/static/images/hw3_images/{{im2_id}}.jpg" width="640" height="427"
-        class="img-fluid rounded" alt="{{im2_id}}"/>
-      </p>
-      <p>
-          RGB image in JPEG format with width 640 and height 427
-      </p>
-
-      <!-- URL back to home -->
-      <a href="{{ url_for('home') }}">
-        Back to list of images
-      </a>
-      <br>
+      {% block content %}
+      {% endblock %}
     </div>
-</body>
-
+    <div class="container">
+      
+      <h1>Experience</h1>
+      
+    </div>
+  </body>
 </html>

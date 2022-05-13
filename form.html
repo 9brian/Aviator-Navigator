@@ -25,6 +25,7 @@
           <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('page2func') }}">How It Works</a></li>
+            <li><a href="{{ url_for('page3func') }}">Experience</a></li>
           </ul>
         </nav></strong>
       </div>
@@ -40,31 +41,29 @@
     </div>
     <div class="container">
       
-      <h1>Title of Page!</h1>
+      <h1>Welcome!</h1>
       
     </div>
   </body>
+
+  <div class="container">
+
   
-  <form action="{{ url_for('home')}}" method="post">
-    <label for="cityname">City Name:</label>
-    <input type="text" id="cityname" name="cityname" placeholder="">
-    <label for="statename">State Name:</label>
-    <input type="text" id="statename" name="statename">
-    <button type="submit">Login</button>
-
-
-
-  <body>
-    <p>Welcome to the Aviator Navigator the perfect site 
-      for all busy travelers whether they be a hobbyist who 
-      like to explore the world on the go or a professional 
-      that needs real time info on their next stop in their career</p>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-    <h6>Header 6</h6>
-  </body>
+    <body>
+      <p>Welcome to the Aviator Navigator the perfect site 
+        for all busy travelers whether they be a hobbyist who 
+        like to explore the world on the go or a professional 
+        that needs real time info on their next stop in their career</p>
+      <h6>There is 1-6 Headers</h6>
+      <form action="{{ url_for('home')}}" method="post">
+        <label for="cityname">City Name:</label>
+        <input type="text" id="cityname" name="cityname" placeholder="">
+        <label for="statename">State Name:</label>
+        <input type="text" id="statename" name="statename">
+        <button type="submit">Login</button>
+      </h6>
+    </body>
+  </div>
   
 
 
