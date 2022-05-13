@@ -18,9 +18,10 @@ def home():
        return "The city you're looking at is " + city_name + " " + state_name
     return render_template("form.html")
 # Page 2
-@app.route('/about')
+@app.route('/how-it-works')
 def page2func():
   return render_template('page2.html')
+@app.route('/experience')
 def page3func():
   return render_template('page3.html')
 
