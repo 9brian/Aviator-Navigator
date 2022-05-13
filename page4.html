@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,14 +12,12 @@
         {{ bootstrap.load_css() }}
       {% endblock %}
       <title>7327 Project CST 205 Project</title>
-      <!-- Style -->
       <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    {% endblock %}
+      {% endblock %}
   </head>
-
+  
   <body>
     <header>
-      <!-- Logo container -->
       <div class="container">
         <h1 class="logo">The Aviator Navigator</h1>
         <strong><nav>
@@ -31,43 +30,15 @@
         </nav></strong>
       </div>
     </header>
-
-    
-        
-    
-
     <div class="container">
       {% block content %}
       {% endblock %}
     </div>
     <div class="container">
       
-      <h1>Welcome!</h1>
+      <h1>Tester</h1>
+      <h6>The location you're looking for is {{cn}}, {{sn}}</h6>
       
     </div>
   </body>
-
-  <div class="container">
-
-  
-    <body>
-      <p>Welcome to the Aviator Navigator the perfect site 
-        for all busy travelers whether they be a hobbyist who 
-        like to explore the world on the go or a professional 
-        that needs real time info on their next stop in their career</p>
-      <h6>There is 1-6 Headers</h6>
-      <h6>Head over to experience to check it out!</h6>
-    </body>
-  </div>
-  
-
-
-  <!-- Bottom of page -->
-  <br></br>
-  <div class="creators">
-    <hr></hr>
-  </div>
-  <div class="container">
-    <h6>The authors of this application are Brian Palomar, Nick Mederos, Vince Valencia.</h6>
-  </div>
 </html>
