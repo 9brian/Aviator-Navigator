@@ -13,6 +13,24 @@ Vince debugged and researched workarounds
 We all helped setup the basic flask formatting
 
 Link: https://github.com/9brian/CST-205-Project-7327 
+
+Abstract:
+We have constructed a flask application that is capable of giving the user a detailed 
+weather report based on their entered location.
+
+It is able to do this through the use of an API from Herouku a free API website mentioned in class.
+
+For our code we used a combination of python, html, and css which required a great deal of research 
+and careful planning on all our parts seeing as we are largely inexperienced with all three.
+
+Even with these obstacles we managaed to create a website with a landing page the 
+explanation page you are currently reading and the Experience page. <br/><br/>
+
+The way it works is the user arrives at our home page reads about the app heads over to 
+How it works then finally Experience.
+
+Once there they will enter a location press enter then it will take you to fourth page 
+with the results leaving them prepared for their next or current destination.
 """
 
 # importing Flask and other modules
