@@ -4,6 +4,7 @@
 **Class:** CST-205-01 <br />
 **Date:** May 19, 2022 <br />
 **How to run program:** <br />
+First you'd like to download the templates folder, static folder and the playlist.py file <br />
 **Mac:** <br />
 export FLASK_APP=playlist.py
 export FLASK_DEBUG=1
