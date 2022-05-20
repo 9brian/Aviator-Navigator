@@ -1,3 +1,20 @@
+"""
+Course: CST205-01_SP22: Multimedia Design & Programming
+Title: The Aviator Navigator
+Abstract:
+Date: May 19, 2022
+
+Team number: 7327 
+Teammates: Brian Palomar, Nick Mederos, Vicente Valencia
+
+Brian implemented the api into flask
+Nick worked on styling 
+Vince debugged and researched workarounds
+We all helped setup the basic flask formatting
+
+Link: https://github.com/9brian/CST-205-Project-7327 
+"""
+
 # importing Flask and other modules
 from flask import Flask, request, render_template 
 from flask_bootstrap import Bootstrap5 
@@ -8,7 +25,7 @@ from pprint import pprint
 app = Flask(__name__)
 bootstrap = Bootstrap5(app) 
 
-# location = input("Where would you like to check the weather for? ")
+# Helps create url
 location = 'marina'
 
 # Function to search user wanted location in api
@@ -79,11 +96,12 @@ def home():
 def page2func():
   return render_template('page2.html')
 
+# Page 3
 @app.route('/experience', methods = ["GET","POST"])
 def page3func():
   if request.method == "POST":
     city_name = request.form.get("cityname")
-    state_name = request.form.get("statename") 
+    # state_name = request.form.get("statename") 
     location = city_name
 
     api_search(location)
@@ -94,6 +112,7 @@ def page3func():
     comment=comment)
   return render_template('page3.html')
 
+# Page 4
 @app.route('/tester', methods = ["GET", "POST"])
 def page4func():
   return render_template('page4.html', region=region,
