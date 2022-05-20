@@ -74,3 +74,8 @@ body {
     color: #444;
     text-decoration: none;
   }
+  .box {
+     background-image: url(https://www.123dentist.com/wp-content/uploads/2018/04/dental-emergency-travelling.jpg);
+     background-size: cover;
+     opacity: 80%;
+  }
