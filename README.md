@@ -2,7 +2,7 @@
 **Repository on GitHub for project:** The Aviator Navigator <br />
 **Names of team members:** Brian Palomar, Nick Mederos, Vicente Valencia <br />
 **Class:** CST-205-01 <br />
-**Date:** May 19, 2022
+**Date:** May 19, 2022 <br />
 **How to run program:** <br />
 **Mac:** <br />
 export FLASK_APP=project.py
