@@ -106,14 +106,14 @@ def page3func():
 
     api_search(location)
 
-    return render_template('page4.html', cn=city_name, sn=state_name, 
-    location=location,region=region, dot=dot, cel=temp_cel, far=temp_far, precip=precip, 
+    return render_template('page4.html', cn=city_name, location=location,
+    region=region, dot=dot, cel=temp_cel, far=temp_far, precip=precip, 
     humid=humid, wind_km=wind_km, wind_mile=wind_mile,
     comment=comment)
   return render_template('page3.html')
 
 # Page 4
-@app.route('/tester', methods = ["GET", "POST"])
+@app.route('/results', methods = ["GET", "POST"])
 def page4func():
   return render_template('page4.html', region=region,
   dot=dot, cel=temp_cel, far=temp_far, precip=precip, 
