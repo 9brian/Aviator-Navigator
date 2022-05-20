@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      {% block styles %}
+        <!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+      {% endblock %}
+      <title>7327 Project CST 205 Project</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      {% endblock %}
+  </head>
+  
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">The Aviator Navigator</h1>
+        <strong><nav>
+          <ul class="other_pages">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('page2func') }}">How It Works</a></li>
+            <li><a href="{{ url_for('page3func') }}">Experience</a></li>
+            <li><a href="{{ url_for('page4func') }}">Results</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div class="container">
+      
+      <h1> How Aviator Navigator works</h1>
+      <p></p>
+      <p>We have constructed a flask application that is capable of giving the user a detailed 
+        weather report based on their entered location. <br/>
+        <img src="https://cdn.hackersandslackers.com/2020/02/flask-intro.jpg" alt="flask">
+
+        <br/><br/>
+        It is able to do this through the use of an API from Herouku a free API website mentioned in class. <br />
+        For our code we used a combination of python, html, and css which required a great deal of research 
+        and careful planning on all our parts seeing as we are largely inexperienced with all three. <br/>
+        
+        <img src="https://www.ccu.edu/blogs/cags/uploads/2014/computer-information-technology-code-blue-background.jpg" alt="cool code"> <br /><br />
+
+        Even with these obstacles we managaed to create a website with a landing page the 
+        explanation page you are currently reading and the Experience page. <br/><br/>
+        The way it works is the user arrives at our home page reads about the app heads over to 
+        How it works then finally Experience. <br/><br/>
+        Once there they will enter a location press enter then it will take you to fourth page 
+        with the results leaving them prepared for their next or current destination.
+        
+        <img src="https://www.thomasmore.be/sites/default/files/header_images/header-appliedcomputerscience-engels.jpg" alt="more code">
+
+        </p>
+         
+    </div>
+    
+    
+    
+  </body>
+</html>
