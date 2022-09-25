@@ -14,3 +14,9 @@ flask run
 **Future work:** <br />
 Working on visuals (Javascript, better html)<br />
 Featuring <br />
+
+Description: We have constructed a flask application that is capable of giving the user a detailed 
+weather report based on their entered location.
+It is able to do this through the use of an API from Herouku a free API website mentioned in class.
+For our code we used a combination of python, html, and css which required a great deal of research 
+and careful planning on all our parts seeing as we are largely inexperienced with all three.
