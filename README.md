@@ -1,4 +1,4 @@
-# CST-205-Project-7327
+# Aviator Navigator
 **Repository on GitHub for project:** The Aviator Navigator <br />
 **Names of team members:** Brian Palomar, Nick Mederos, Vicente Valencia <br />
 **Class:** CST-205-01 <br />
